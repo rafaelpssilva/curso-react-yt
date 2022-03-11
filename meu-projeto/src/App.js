@@ -1,20 +1,18 @@
 import './App.css';
 
-import SayMyName from './components/SayMyName'
-import Frase from './components/Frase'
-import List from './components/List'
-
+import Event from './components/Event'
+import Form from './components/Form'
 
 function App() {
-  const nome = "Rafael"
-  return (
-    <div className="App">
-      <h1>Quem sou eu??</h1>
-      <SayMyName nome={nome.toLowerCase()} idade={5 + 11} profissão="Programador" />
-      <Frase />
-      <List />
-    </div>
-  );
+    return (
+      <div className="App">
+        <h1>Working Events</h1>
+        <Event id={1} />
+        <Event id={2} />
+        <Form />
+      </div>
+    );
 }
 
 export default App;
+
