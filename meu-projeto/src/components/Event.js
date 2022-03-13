@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 function Event({ id }) {
 
     function clickTrue() {
-        console.log("True click", id)
+        console.log('clickTrue', id)
     }
 
     return(
