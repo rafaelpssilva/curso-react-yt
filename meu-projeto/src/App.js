@@ -10,7 +10,6 @@ function App() {
         <Event id={1} />
         <Event id={2} />
         <Form />
-        
       </div>
     );
 }
