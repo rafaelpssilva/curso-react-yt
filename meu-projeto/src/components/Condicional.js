@@ -24,7 +24,7 @@ function Condicional() {
                 </button>
                 {userEmail && (
                     <div>
-                        <p>O e-mail do usuario é: {userEmail}</p>
+                        <p>O e-mail do usuario é::gg {userEmail}</p>
                         <button onclick={clearEmail}>Limpar e-mail</button>
                     </div>
                 )}
