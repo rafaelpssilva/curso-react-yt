@@ -1,22 +1,26 @@
-import PropTypes from 'prop-types'
 
-function Event({ id }) {
+import Button from './Button'
 
-    function clickTrue() {
-        console.log('clickTrue', id)
+
+function Event() {
+
+    function oneEvent() {
+        console.log('one event activated')
     }
 
-    return(
-        <>
-            <h1>Events</h1>
-            <button onClick={clickTrue}>Click me</button>
-        </>
+
+    function secondEvent() {
+        console.log('second event activated')
+    }
+
+
+    return (
+        <div>
+            <Button event={oneEvent} text="One" />
+            <Button event={secondEvent} text="Second" />
+        </div>
     )
 
-}
-
-Event.propTypes = {
-    id: PropTypes.number.isRequired
 }
 
 export default Event
